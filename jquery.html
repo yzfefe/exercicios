@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <P>SOU UM PARÁGRAFO</P>
+  <div>
+    <h1>lista</h1>
+  </div>
+
+    <div> 
+        <ul>
+            <li>Felipe</li>
+            <li>pamela</li>
+            <li>hugo</li>
+            <li>cla</li>
+            <li>diogo</li>
+        </ul>
+    
+    </div>
+    <div>
+        <button id="btn">Click aqui!</button>
+    </div>
+    <script>
+        $('#btn').on('click', botao)
+       
+
+      function botao() {
+        $('li').css({"color": "purple"});
+        $('p').css({"color": "green"});
+      }
+
+    </script>
+</body>
+</html>
