@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button{
+            background-color: rgba(0, 255, 0, 0.586);
+            margin-top: 24px; ;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="">
+        
+            Nascimento: <input type="text" id="nascimento" class="form-control"><br>
+
+        </form>
+
+        <button id="butao" class="btn btn-primary" onclick="msg()">n clique aq</button><br><br>
+        <p id="Snome"></p>
+        <p id="Snascimento"></p>
+        <p id="cr7"></p>
+    </main>
+    
+    <script>
+        function msg(){
+            let nome = document.getElementById("nome").value
+            let nascimento = +document.getElementById("nascimento").value
+            let idade_atual = 2024 - nascimento
+            document.getElementById("Snome").innerHTML = nome
+            document.getElementById("Snascimento").innerHTML = idade_atual
+
+            if((idade_atual >=18)){
+            document.getElementById("cr7").innerHTML = ("Você deve votar")
+        }
+            else if((idade_atual<18 )) {
+            document.getElementById("cr7").innerHTML = ("Você não deve votar")
+        }
+            
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fundo(1)">alterar para azul</button>
+    <button onclick="fundo(2)">alterar para vermelho</button>
+    <button onclick="fundo(3)">alterar para rosa</button>
+    <button onclick="fundo(4)">alterar para o maior do país</button>
+    <script>
+        function fundo(i) {
+            if(i == 1){
+                document.body.style.backgroundColor = "blue"
+            }
+            else if(i == 2){
+                document.body.style.backgroundImage = "url('img/alokson.jpeg')"
+            }
+            else if(i == 3){
+                document.body.style.backgroundImage = "url('img/camisa.jpg')"
+            }
+            else if(i == 4){
+                document.body.style.backgroundImage = "url('img/gavioes.jpg')"
+            }
+        }
+    </script>
+</body>
+</html>

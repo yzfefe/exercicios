@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros Compostos</title>
+
+    <link rel="stylesheet" href="css/juros.css">
+</head>
+<body>
+    <div id="sla">
+        <div id="calculadora">
+            <h2>Calculadora de Juros Compostos</h2>
+        </div>
+      
+
+        <label for="capital">Valor inicial (capital)</label><br>
+        <input type="text" id="capital"><br><br>
+
+        <label for="taxa">Taxa de juros a.m</label><br>
+        <input type="text" id="taxa"><br><br>
+
+        <label for="tempo">Tempo de rendimento a.m</label><br>
+        <input type="text" id="tempo"><br>
+
+        <p>Resultado</p>
+        <p id="result">00.00</p>
+
+        <button onclick="juros()">Calcular</button>
+
+    </div>
+    
+    
+    <script src="js/juros.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite o primeiro numero: <input type="text" id="num1"> <br>
+    Digite o segundo numero: <input type="text" id="num2"> <br>
+    Digite o terceiro numero: <input type="text" id="num3"> <br>
+    <button onclick="descibra()">descubra</button>
+    <p id="numero"></p>
+<script>
+    function descibra() {
+        let num1 = +document.getElementById("num1").value
+        let num2 = +document.getElementById("num2").value
+        let num3 = +document.getElementById("num3").value
+        if((num1>num2) && (num1>num3)) {
+            document.getElementById("numero").innerHTML=("O"+ num1+ " é  o maior número")
+        }else if((num2>num1) && (num2>num3)){
+            document.getElementById("numero").innerHTML=("O"+ num2+ " é  o maior número")
+        }else{
+            document.getElementById("numero").innerHTML=("O"+ num3+ " é  o maior número")
+        }
+    }
+        
+</script>
+</body>
+</html>

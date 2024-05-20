@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrr</title>
+</head>
+<body>
+    Digite o ano: <input type="text" id="ano"><br>
+    <button onclick="aperta()">aperta</button><br>
+    <p id="bi"> </p>
+<script>
+    function aperta(){
+    let ano = +document.getElementById("ano").value
+    if (( ano%4==0)  || ( ano%400==0) && ( ano%100!=0)) {
+        document.getElementById("bi").innerHTML=(ano+" é ano bissexto")
+    }else{
+        document.getElementById("bi").innerHTML=(ano+" não é bissexto")
+    }
+}
+   
+
+</script>
+</body>
+</html>

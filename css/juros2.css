@@ -1,0 +1,51 @@
+
+*{
+    font-family: Arial;
+}
+
+body{
+    background:linear-gradient(90deg, #C217F6, #00FFFF, #C217F6)
+}
+
+input, button{
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #D02090;
+    color: white;
+}
+
+#aaa{
+    width: 100;
+    display: grid;
+    place-items: center;    
+
+
+}
+#calculadora{
+    top: 100px;
+    width: 50%;
+    height: 95%;
+    place-items: center; 
+    display: grid;
+    background-color: black;
+    border-radius: 8px;
+    padding: 1%;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 8px rgba(0, 0, 0, 0.2)
+}
+
+#oi{
+    background-color: #D02090;
+    width: 100px;
+    height: 35px;
+}
+
+.input{
+    width: 370px;
+    height: 30px;
+    background-color: transparent;
+    border-bottom:2px solid #7400b8;
+    font-weight: bold;  
+}

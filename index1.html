@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nascimento = +prompt("Digite o ano que você nasceu: ")
+        let idade_atual = 2024 - nascimento
+
+        if((idade_atual >= 16) && (idade_atual < 18)){
+            let titulo = prompt("Você possui titulo?")
+            if (titulo == "sim"){
+                document.write("Você tem "+ idade_atual + " e tirou o titulo de eleitor, você é obrigado a votar")
+            }
+        } else if((idade_atual>= 18) && (idade_atual <=65)){
+            document.write("Você tem "+ idade_atual + " e  você é obrigado a votar") 
+        }
+        else if((idade_atual > 65)) {
+            document.write("Você nao é obrigado a votar")
+        }else{
+            document.write("não pode votar")
+        }
+        
+        
+    </script>
+</body>
+</html>

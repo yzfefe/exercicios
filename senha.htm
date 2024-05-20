@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senha do fgunz</title>
+</head>
+<body>
+    digite sua senha: <input type="password" id="senha">
+    <button onclick="senha()">Ok rs</button>
+    <p id="valido"></p>
+    
+    <script>
+        function senha(){
+            let senha = document.getElementById("senha").value
+            tentativas=0
+            while(tentativas>=0){
+                if (tentativas > 3){
+                    document.getElementById("valido").innerHTML = "vc n tem mais tentativas"
+                }
+                else{
+                    document.getElementById("valido").innerHTML = ("senha errada, vc tem"+ tentativas)
+                }
+                tentativas++
+            }
+        }
+    </script>   
+
+
+</body>
+</html>

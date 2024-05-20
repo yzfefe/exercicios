@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id= "produto">
+        <button onclick="colocar()">adicionar na lista</button>
+        <button onclick="remover()"> remover da lista</button>
+        <p id ="demo"></p>
+    </div>
+    <script>
+        let lista = [" "]
+        function colocar() {
+            let item = document.getElementById("produto").value
+            lista.push(item)
+            document.getElementById("demo").innerHTML= lista.join("<br>-")
+        
+            }
+            document.getElementById("produto").value = ""
+        
+        function remover() {
+            let item = document.getElementById("produto").value
+            lista.pop(item)
+            document.getElementById("demo").innerHTML= lista.join("<br>-")
+            document.getElementById("produto").value = ""
+             
+        }
+    </script>
+</body>
+</html>

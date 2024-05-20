@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <p id="nota_final"></p>
+    <p id="somar"></p>
+    <p id="diminuir"></p>
+    <p id="multiplicar"></p>
+    <p id="dividir"></p>
+    
+    <script >
+    let nota1 = +prompt('Digite a primeira nota:')
+    let nota2 = +prompt('Digite o segundo nota:')
+    let media = (nota1 + nota2)/2
+
+    //document.write('sua média é:' + ++ media)
+    document.getElementById('nota_final').innerHTML = media
+    document.getElementById('somar').innerHTML = nota1 + nota2
+    document.getElementById('diminuir').innerHTML = nota1 - nota2
+    document.getElementById('multiplicar').innerHTML = nota1 * nota2
+    document.getElementById('dividir').innerHTML = nota1 / nota2
+</script>
+</body>
+</html>
