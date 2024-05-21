@@ -1,3 +1,7 @@
 body{
-    background:linear-gradient(95deg, #0f046d, #650320, #0f046d)
+    height: 100vh;
+    background: linear-gradient(115deg, #8c078cd8, #532902da);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
