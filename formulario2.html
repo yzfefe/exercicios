@@ -5,46 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <h1>Preencha os dados</h1>
+    <link rel="stylesheet" href="css/form2.css">
 </head>
 <body>
-    <style>
-        body {
-            text-align: center; 
-            font-size:large;
-        }
-        h1 {
-            color: rgb(72, 14, 14);
-            padding: 5px;
-           
-        } 
-        </style>
+   
     <form>
-        <div>
-            <label for="e">Nome:</label>
-            <input type="text" id="r" placeholder="Digite seu nome...">
-        </div> <br>
+        <div id="div-princ">
+            <div class="divs">
+                <label for="e">Nome:</label>
+                <input type="text" id="r" placeholder="Digite seu nome...">
+            </div> <br>
+    
+            <div>
+                <label for="rg">Rg:</label>
+                <input type="text" id="rg" placeholder="Digite seu rg...">
+            </div> <br>
+            
+            <div>
+                <input type="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx"/>
+                <label for="cpf"></label>
+               
+            </div> <br>
+    
+            <div>
+                <label for="profissão">Profissão:</label>
+                <input type="text" id="profissão" placeholder="Digite sua profissão...">
+            </div> <br>
+    
+            <div>
+                <label for="endereço">Endereço:</label>
+                <input type="text" id="endereço">
+             
+            </div> <br>
 
-        <div>
-            <label for="rg">Rg:</label>
-            <input type="text" id="rg" placeholder="Digite seu rg...">
-        </div> <br>
+        </div>
         
-        <div>
-            <input type="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx"/>
-            <label for="cpf"></label>
-           
-        </div> <br>
-
-        <div>
-            <label for="profissão">Profissão:</label>
-            <input type="text" id="profissão" placeholder="Digite sua profissão...">
-        </div> <br>
-
-        <div>
-            <label for="endereço">Endereço:</label>
-            <input type="text" id="endereço">
-         
-        </div> <br>
     
     </form>
     <script>

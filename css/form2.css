@@ -1,0 +1,13 @@
+body {
+    text-align: center; 
+    font-size:large;
+}
+h1 {
+    color: rgb(72, 14, 14);
+    padding: 5px;
+   
+} 
+
+#div-princ{
+    background-color: blueviolet;
+}
