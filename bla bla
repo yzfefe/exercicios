@@ -1,0 +1,20 @@
+UC023 – Alugar o salão de festa
+Descrição:
+1. O sistema verifica se há disponibilidade de salão.
+2. O sistema apresenta uma lista dos horários para ser selecionada o melhor 
+horário.
+3. O sistema retorna uma lista do tipo de decoração. Para cada hóspede é 
+apresentado os temas.
+4. Caso o usuário deseje alugar por mais que um dia, ele seleciona a opção 
+desejada (usando case Aluguel). Caso ele deseje ver informações detalhadas da 
+opção escolhida ele vai em detalhes.
+5. O sistema retorna as informações detalhadas da opção escolhida: metros 
+quadrados, disponibilidade, preço, nomes responsáveis do salão. Caso o usuário 
+deseje alugar o salão de seu gosto, ele pode incluí-lo na lista de Gastos para mais 
+tarde efetuar a compra (use case Aluguel). Caso deseje, ele pode visitar antes 
+para conferir sua escolha.
+6. Se o usuário tiver interesse, ele pode retornar para o passo 4 para alugar outro 
+salão.
+Atores: Hóspede.
+Pré-condições: O ator deve ter realizado login no sistema.
+Pós-condições: A lista de compras é atualizada com os novos produtos.
